@@ -1,0 +1,11 @@
+{
+  "task": "clean the dirty mug",
+  "role": "cleaner",
+  "memory": "你是清洁工，只做：清洗物品、清洁",
+  "success": true,
+  "reward": 1.0,
+  "actions": [
+    "look",
+    "clean mug"
+  ]
+}

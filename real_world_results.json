@@ -1,0 +1,83 @@
+{
+  "training_results": [
+    {
+      "task": "task_1",
+      "role": "cleaner",
+      "memory": "你是清洁工，擅长：清洗物品、清洁",
+      "success": true,
+      "reward": 10.0
+    },
+    {
+      "task": "task_2",
+      "role": "chef",
+      "memory": "你是厨师，擅长：加热食物、使用微波炉、处理食材",
+      "success": false,
+      "reward": 0.0
+    },
+    {
+      "task": "task_3",
+      "role": "waiter",
+      "memory": "你是服务员，擅长：取放物品、摆放、收纳",
+      "success": false,
+      "reward": 0.0
+    }
+  ],
+  "matched_test_results": [
+    {
+      "task": "task_4",
+      "role": "cleaner",
+      "memory": "你是清洁工，擅长：清洗物品、清洁",
+      "success": true,
+      "reward": 10.0,
+      "memory_match": true
+    },
+    {
+      "task": "task_5",
+      "role": "chef",
+      "memory": "你是厨师，擅长：加热食物、使用微波炉、处理食材",
+      "success": false,
+      "reward": 0.0,
+      "memory_match": true
+    },
+    {
+      "task": "task_6",
+      "role": "waiter",
+      "memory": "你是服务员，擅长：取放物品、摆放、收纳",
+      "success": false,
+      "reward": 0.0,
+      "memory_match": true
+    }
+  ],
+  "mismatched_test_results": [
+    {
+      "task": "task_4",
+      "role": "cleaner",
+      "memory": "你是服务员，擅长：取放物品、摆放、收纳",
+      "success": false,
+      "reward": 0.0,
+      "memory_match": false
+    },
+    {
+      "task": "task_5",
+      "role": "chef",
+      "memory": "你是服务员，擅长：取放物品、摆放、收纳",
+      "success": false,
+      "reward": 0.0,
+      "memory_match": false
+    },
+    {
+      "task": "task_6",
+      "role": "waiter",
+      "memory": "你是厨师，擅长：加热食物、使用微波炉、处理食材",
+      "success": false,
+      "reward": 0.0,
+      "memory_match": false
+    }
+  ],
+  "analysis": {
+    "matched_success_rate": 33.33333333333333,
+    "mismatched_success_rate": 0.0,
+    "matched_avg_reward": 3.3333333333333335,
+    "mismatched_avg_reward": 0.0
+  }
+}

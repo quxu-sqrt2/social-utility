@@ -1,0 +1,29 @@
+{
+  "matched_memory": {
+    "task": "clean the dirty mug",
+    "role": "cleaner",
+    "memory": "你是清洁工，只做：清洗物品、清洁",
+    "success": true,
+    "reward": 1.0,
+    "actions": [
+      "look",
+      "look",
+      "look",
+      "clean mug"
+    ]
+  },
+  "mismatched_memory": {
+    "task": "clean the dirty mug",
+    "role": "cleaner",
+    "memory": "你是厨师，只做：加热食物、使用微波炉、处理食材",
+    "success": false,
+    "reward": 0.0,
+    "actions": [
+      "look",
+      "look",
+      "look",
+      "look",
+      "look"
+    ]
+  }
+}
